@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+li a {
+	text-align: center;
+	border: 1px solid black;
+	color: black !important	;
+}
+nav .container-fluid {
+	padding: 0px;
+}
+.navbar-brand {
+	font-size: 30px;
+	margin: 16px 30px 16px 30px;
+}
+.row h1 {
+	margin: 20px 0px 30px 0px;
+	text-align: center;
+}
+.col-12 {
+	border: 1px solid black;
+	width: 75%;
+	margin: 10px 12.5% 10px 12.5%;
+	background-color: #FFBF00;
+}
+.col-12 h2 {
+	text-align: center;
+}
+.col-12 p {
+	clear: both;
+}
+@media (min-width: 576px) {
+	.navbar-toggler {
+		display: none;
+	}
+	.col-12 {
+		width: 97%;
+		margin: 10px 1.5% 10px 1.5%;	
+	}
+	#navbarNav, .col-12 a {
+		display: none !important;
+	}
+}
+
