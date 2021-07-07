@@ -3,7 +3,8 @@
 }
 li a {
 	text-align: center;
-	border: 1px solid black;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 	color: black !important	;
 }
 nav .container-fluid {
@@ -17,28 +18,48 @@ nav .container-fluid {
 	margin: 20px 0px 30px 0px;
 	text-align: center;
 }
-.col-12 {
+.colum {
+	padding: 12px;
+}
+.box {
 	border: 1px solid black;
-	width: 75%;
-	margin: 10px 12.5% 10px 12.5%;
 	background-color: #FFBF00;
 }
-.col-12 h2 {
+.box h2 {
+	margin-top: 10px;
+	font-size: 1.2em;
 	text-align: center;
 }
-.col-12 p {
+.box p {
+	margin: 15px;
 	clear: both;
+	height: 450px;
+	overflow: auto;
 }
 @media (min-width: 576px) {
 	.navbar-toggler {
 		display: none;
 	}
-	.col-12 {
-		width: 97%;
-		margin: 10px 1.5% 10px 1.5%;	
-	}
-	#navbarNav, .col-12 a {
+	
+	#navbarNav, .box a {
 		display: none !important;
+	}
+}
+@media (max-width: 575px) {
+	.box {
+		width: 85%;
+		margin: 0 7.5% 0 7.5%;
+	}
+	.box p {
+		height: 200px;
+	}
+	.row h1 {
+		margin: 10px 0px 0px 0px;
+		text-align: center;
+}
+@media (max-width: 767px) {
+	.box p {
+		height: 300px;
 	}
 }
 
